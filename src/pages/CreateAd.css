@@ -1,0 +1,188 @@
+.createAd {
+
+}
+.createAd__header{
+    background-color: #f7f8f8;
+    padding: .7rem 1.6rem;
+}
+.MuiSvgIcon-root {
+    margin-right: 10px;
+}
+
+.createAd__body{
+    /* display: flex;
+    flex-direction: column; */
+}
+.createAd__body > h3{
+    text-align: center;
+
+}
+
+.createAd__container{
+    border: 1px solid rgb(177, 175, 175);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.detailBox{
+    border: 1px solid lightgray;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.detailBox > h2{
+    padding-top: 30px;
+    padding-left: 30px;
+    text-transform: uppercase;
+}
+.detailBox > p{
+    padding-left: 30px;
+    
+}
+.detailBox > input {
+    margin-left: 30px;
+    width: 90%;
+    margin-top: -15px;
+    padding: 10px;
+}
+.detailBox > span{
+    padding-left: 30px;
+    margin-bottom: 30px;
+    font-size: small;
+}
+
+
+.priceBox{
+    border: 1px solid lightgray;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.priceBox > h2{
+    padding-top: 30px;
+    padding-left: 30px;
+    text-transform: uppercase;
+}
+.priceBox > p {
+    padding-left: 30px;
+}
+.priceBox > input {
+    margin-left: 30px;
+    width: 90%;
+    margin-top: -15px;
+    padding: 10px;
+}
+.priceBox > span {
+    padding-left: 30px;
+    margin-bottom: 30px;
+    font-size: small;
+}
+
+.photoBox{
+    border: 1px solid lightgray;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.photoBox > h2{
+    padding-top: 30px;
+    padding-left: 30px;
+    text-transform: uppercase;
+}
+
+.photoBox > input {
+    margin-left: 30px;
+    width: 90%;
+    margin-top: -15px;
+    padding: 10px;
+}
+
+.locationBox{
+    border: 1px solid lightgray;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.locationBox > h2 {
+    padding-top: 30px;
+    padding-left: 30px;
+    text-transform: uppercase;
+}
+.locationBox > p {
+    padding-left: 30px;
+}
+.locationBox > input {
+    margin-left: 30px;
+    width: 90%;
+    margin-top: -15px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.reviewBox{
+    border: 1px solid lightgray;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.reviewBox > h2{
+    padding-top: 30px;
+    padding-left: 30px;
+    text-transform: uppercase;
+}
+
+.reviewBox > p{
+    padding-left: 30px;
+
+}
+.reviewBox__details{
+    display: flex;
+
+}
+.personalDetailsLeft{
+   flex: 0.2;
+   margin-left: 30px;
+}
+.personalDetailsLeft > .MuiAvatar-root{
+    width: 100px;
+    height: 100px;
+}
+
+.personalDetailsRight{
+    flex: 0.8;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.personalDetailsRight > input {
+    width: 80%;
+    margin-left: 20px;
+    align-items: center;
+
+}
+.phoneNumber{
+    display: flex;
+    justify-content: space-evenly;
+}
+.postButton{
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.postButton > button {
+    background-color: #002F34;
+    width: 8.5rem;
+    height: 3.5rem;
+    color: white;
+    font-size: x-large;
+    font-weight: 700;
+    border-radius: 4PX;
+    border: 2px solid white;
+}
