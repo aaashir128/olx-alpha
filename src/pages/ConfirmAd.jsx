@@ -10,13 +10,15 @@ function ConfirmAd() {
   const history = useHistory();
   const {usersId} = useParams()
 
-  const postToDb = () => {
-    db
-    .collection("ads")
+  const postToDb = async()  => {
+    // console.log(ad)
+    const userRef = await db.doc(`ads/123`);
     // .doc(usersId).collection('ads')
-    .add({
+    const snapshot = await userRef.get();
+    console.log(snapshot)
+    userRef.set({
       ...ad
-    });
+    })
 
     alert("You have successfully created the ad");
     history.push("/");

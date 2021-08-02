@@ -1,8 +1,9 @@
 import { Avatar } from "@material-ui/core";
 import { ChevronLeft } from "@material-ui/icons";
 import React from "react";
+import firebase from 'firebase'
 import { useState } from "react";
-import { useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import db, { storage } from "../config/firebase";
 import { useStateValue } from "../config/StateProvider";
 import "./CreateAd.css";
@@ -51,9 +52,10 @@ function CreateAd() {
           .child(photo.name)
           .getDownloadURL()
           .then((url) => {
-            dispatch({
-              type: "CREATE_AD",
-              item: {
+            // dispatch({
+            //   type: "CREATE_AD",
+              // item: {
+                db.collection('ads').add({
                 title: title,
                 detail: detail,
                 price: price,
@@ -61,8 +63,10 @@ function CreateAd() {
                 location: location,
                 name: name,
                 number: number,
-              },
-            });
+                timestamp: firebase.firestore.FieldValue.serverTimestamp()
+              // },
+            })
+            // });
             setProgress(0);
             setPhoto(null);
             setPrice("");
@@ -72,7 +76,8 @@ function CreateAd() {
             setLocation("");
             setDetail("");
           });
-          history.push('/confirmAd')
+          alert('Your ad has been successfully added')
+          history.push('/')
       }
     );
   };
@@ -99,7 +104,9 @@ function CreateAd() {
     <div className="createAd">
       <div className="createAd__header">
         <ChevronLeft />
+        <Link to='/'>
         <img src="https://www.olx.com.pk/assets/logo_noinline.1cdf230e49c0530ad4b8d43e37ecc4a4.svg" />
+        </Link>
       </div>
 
       <div className="createAd__body">
@@ -179,7 +186,7 @@ function CreateAd() {
             </div>
 
             <div className="postButton">
-              <button type="submit" onClick={createPost}>
+              <button disabled={!name || !title || !detail || !price || !location || !photo || !number} type="submit" onClick={createPost}>
                 Post Now
               </button>
               <progress className="progressBar" value={progress} max="100" />

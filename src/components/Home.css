@@ -1,13 +1,23 @@
-.home{
-    display: flex;
-    height: 100vh;
-    width: 100vw;   
+.home {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
 }
 
-.home__image{
-    width: 99%;
+.home__image {
+  width: 99%;
 }
 
-.home{
-
+@media only screen and (max-width: 600px) {
+  .home {
+    max-width: 100%;
+  }
+  .home__container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fresh{
+    margin: 20px 0;
+  }
 }

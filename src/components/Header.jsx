@@ -27,12 +27,14 @@ function Header() {
   }
   return (
     <div className="header">
+      <Link to="/">
       <div className="header__left">
         <img
           src="https://www.olx.com.pk/assets/logo_noinline.1cdf230e49c0530ad4b8d43e37ecc4a4.svg"
           alt=""
-        />
+          />
       </div>
+          </Link>
 
       <div className="header__search">
         <input />

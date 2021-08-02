@@ -21,7 +21,7 @@ function Products({ id, image, price, title, location, timestamp }) {
 
         <div className="products__bottom">
           <p className="products__location">{location}</p>
-          <p className="products__timestamp">{timestamp}</p>
+          <p className="products__timestamp">{new Date(timestamp?.toDate()).toLocaleString()}</p>
         </div>
       </div>
     </div>

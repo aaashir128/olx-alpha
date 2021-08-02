@@ -86,3 +86,41 @@
     width: 6.4rem;
     height: 2.8rem;
 }
+.footer__bottom{
+    padding: 1.6rem 0;
+    background-color: #002f34;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .footer{
+        width: 100vw;
+    }
+    .footer__top{
+        padding: 5px;
+    }
+    .footer__topSections{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+    .topSections > ul{
+        margin: -5px 0;
+       text-align: center;
+    }
+    .footer__bottom{
+        padding: 1.6rem 0;
+        background-color: #002f34;
+        color: white;
+        width: 100%;
+        text-align: center;
+        font-weight: 500;
+        font-size: 13px;
+    }
+}
