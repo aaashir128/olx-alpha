@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/olx-alpha/static/css/main.868ab8f8.chunk.css",
+    "main.js": "/olx-alpha/static/js/main.5a9a2ff4.chunk.js",
+    "main.js.map": "/olx-alpha/static/js/main.5a9a2ff4.chunk.js.map",
+    "runtime-main.js": "/olx-alpha/static/js/runtime-main.b727dc55.js",
+    "runtime-main.js.map": "/olx-alpha/static/js/runtime-main.b727dc55.js.map",
+    "static/css/2.8885c1cd.chunk.css": "/olx-alpha/static/css/2.8885c1cd.chunk.css",
+    "static/js/2.9082da1f.chunk.js": "/olx-alpha/static/js/2.9082da1f.chunk.js",
+    "static/js/2.9082da1f.chunk.js.map": "/olx-alpha/static/js/2.9082da1f.chunk.js.map",
+    "static/js/3.a6354dde.chunk.js": "/olx-alpha/static/js/3.a6354dde.chunk.js",
+    "static/js/3.a6354dde.chunk.js.map": "/olx-alpha/static/js/3.a6354dde.chunk.js.map",
+    "index.html": "/olx-alpha/index.html",
+    "static/css/2.8885c1cd.chunk.css.map": "/olx-alpha/static/css/2.8885c1cd.chunk.css.map",
+    "static/css/main.868ab8f8.chunk.css.map": "/olx-alpha/static/css/main.868ab8f8.chunk.css.map",
+    "static/js/2.9082da1f.chunk.js.LICENSE.txt": "/olx-alpha/static/js/2.9082da1f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b727dc55.js",
+    "static/css/2.8885c1cd.chunk.css",
+    "static/js/2.9082da1f.chunk.js",
+    "static/css/main.868ab8f8.chunk.css",
+    "static/js/main.5a9a2ff4.chunk.js"
+  ]
+}
